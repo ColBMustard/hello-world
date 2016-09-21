@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Hello world </title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+    <h2> Hello world! </h2>
+    <p> My name is Benjamin Mustard and my love for music and video games is only outmatched by one thing: cats. You need proof? Look below. 
+    </p>
+    <br>
+    
+    
+    <img src="http://i.imgur.com/W2ImsgR.jpg" alt="Cat" >
+    <img src="http://i.imgur.com/4WezJAM.jpg" alt="Cat" > 
+    <video controls autoplay loop> <source src="http://i.imgur.com/wO7pizC.mp4" type="video/mp4" alt="Cat" >
+    </video>
+    
+        
+    <br>
+    <br>
+    
+    <h4>
+    I'm also great at math. Here, let me help you with some. Click any of the buttons below to try some basic calculations</h4>
+    
+    
+    <p id="add"></p>
+    <p id="minus"></p>
+    <p id="multiply"></p>
+    <p id="divide"></p>
+    
+    <button onclick="add()">Addition</button>
+
+    <script>
+        function add(){  
+            var x = prompt("Please enter your first number", 1);
+            var y = prompt("Please input your second number", 1);
+            var z = +x + +y;
+            document.getElementById("add").innerHTML = z;
+        }
+    </script>
+    
+    <button onclick="minus()">Subtraction</button>
+
+    <script>
+        function minus(){  
+            var x = prompt("Please enter your first number", 1);
+            var y = prompt("Please input your second number", 1);
+            var z = x - y;
+            document.getElementById("minus").innerHTML = z;
+        }
+    </script>
+    
+    <button onclick="multiply()">Multiplication</button>
+
+    <script>
+        function multiply(){  
+            var x = prompt("Please enter your first number", 1);
+            var y = prompt("Please input your second number", 1);
+            var z = x * y;
+            document.getElementById("multiply").innerHTML = z;
+        }
+    </script>
+    
+    <button onclick="divide()">Division</button>
+
+    <script>
+        function divide(){  
+            var x = prompt("Please enter your first number", 1);
+            var y = prompt("Please input your second number", 1);
+            var z = x / y;
+            document.getElementById("divide").innerHTML = z;
+        }
+    </script>   
+    
+    <br>
+    <br>
+    <br>
+    
+
+    <p> It's rough and could really do with a better UI/ better placement of the output...so I shall call this a work in progress. </p>
+    
+    
+</body>
+
+</html>
